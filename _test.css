@@ -1,0 +1,18 @@
+body {
+	background-color: lightblue;
+}
+
+#topSection {
+	height: 100px;
+}
+
+#mainSection {
+	
+}
+
+#tailSection {
+	position: absolute;
+	height: 200px;
+	width: 98%;
+	bottom: 0;
+}
