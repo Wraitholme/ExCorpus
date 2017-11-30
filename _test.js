@@ -95,7 +95,7 @@ function mainInit() {
 	mainSection = document.getElementById("mainSection");
 	tailSection = document.getElementById("tailSection");
 	
-	//jsonTest();
+	jsonTest();
 	
 	
 }
