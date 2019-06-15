@@ -1,13 +1,19 @@
+function AgentModel() {
+	this.Name = "John Smith";
+	this.Desc = "Description Not Available";
+}
+
 function populateAgents() {
 	
 	var tempAgentArray = [];
-	var fillArray = [];
 	
-	fillArray = ["Agent 1","The first agent"];
-	tempAgentArray.push(fillArray);
+	tempAgentArray[0] = new AgentModel();
+	tempAgentArray[0].Name = "Agent1";
+	tempAgentArray[0].Desc = "The First Agent";
 	
-	fillArray = ["Agent 2","The second agent"];
-	tempAgentArray.push(fillArray);
+	tempAgentArray[1] = new AgentModel();
+	tempAgentArray[1].Name = "Agent2";
+	tempAgentArray[1].Desc = "The Second Agent";
 	
 	
 	return tempAgentArray;

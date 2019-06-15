@@ -1,8 +1,20 @@
+/*
+Create object file
+ - Agent object
+ - Mission object 
+ 
 
+
+*/
 
 var topSection;
 var mainSection;
 var tailSection;
+var agentListing;
+var agentThumbs;
+var agentDetails;
+var missionListing;
+var activeListing;
 
 var updateConsoleArray = [];
 var agentArray = [];
@@ -10,12 +22,17 @@ var agentArray = [];
 
 function mainInit() {
 	
-	topSection = document.getElementById("topSection");
-	mainSection = document.getElementById("mainSection");
 	tailSection = document.getElementById("tailSection");
 	updateConsole("Initialising...")
+	topSection = document.getElementById("topSection");
+	mainSection = document.getElementById("mainSection");
+	agentListing = document.getElementById("agentListing");
+	agentThumbs = document.getElementById("agentThumbs");
+	agentDetails = document.getElementById("agentDetails");
+	missionListing = document.getElementById("missionListing");
+	activeListing = document.getElementById("activeListing");
 	
-	updateConsole("Loading agent details...")
+	updateConsole("Retrieving agent details...")
 	agentArray = populateAgents();
 	
 	
@@ -23,6 +40,7 @@ function mainInit() {
 	updateConsole("Ready.")
 
 }
+
 
 function updateConsole(addString) {
 	
